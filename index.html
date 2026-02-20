@@ -1,75 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rahul V S | Software Engineer</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul V S - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Rahul V S</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internships">Internships</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header class="nav">
-  <h3>Rahul V S</h3>
-  <nav>
-    <a href="#work">Work</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <button id="theme-toggle">🌙</button>
-  </nav>
-</header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm <span>Rahul</span></h2>
+      <p>Cloud Engineer Aspirant | AI & ML Enthusiast | Web Developer</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </section>
 
-<section class="hero reveal">
-  <h1>Building Thoughtful & Scalable Digital Solutions</h1>
-  <p>
-    Software Engineer with experience across system design,
-    cloud platforms, AI-driven applications, and modern web technologies.
-  </p>
-  <a class="btn" href="#work">View My Work</a>
-</section>
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Driven Computer Science and Business Systems student seeking a Cloud Engineer role. Skilled in cloud platforms, automation, and system design, with a strong interest in building scalable and secure cloud solutions.</p>
+  </section>
 
-<section id="work" class="projects reveal">
-  <h2>Selected Projects</h2>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">C</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">HTML/CSS/JS</div>
+      <div class="skill-card">GitHub</div>
+    </div>
+  </section>
 
-  <div class="project-card">
-    <h3>DDoSGuard</h3>
-    <p>
-      Distributed system for analyzing network traffic and mitigating
-      malicious requests to ensure service reliability.
-    </p>
-  </div>
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>DDoSGuard</h3>
+        <p>Detection and mitigation system for DDoS attacks using traffic analysis.</p>
+      </div>
+      <div class="project-card">
+        <h3>Intelligent Resume Builder API</h3>
+        <p>AI-driven system that generates ATS-optimized resumes tailored to job roles.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="project-card">
-    <h3>Intelligent Resume Builder API</h3>
-    <p>
-      AI-powered platform that generates ATS-optimized resumes
-      tailored to specific job roles.
-    </p>
-  </div>
-</section>
+  <!-- Internships -->
+  <section id="internships" class="section">
+    <h2>Internships</h2>
+    <div class="internship-card">
+      <h3>AI & ML Virtual Intern - Edunet Foundation | AICTE - Microsoft Azure</h3>
+      <p>Developed CO2 emission prediction model using real-world climate and economic data.</p>
+    </div>
+    <div class="internship-card">
+      <h3>Digital Marketing Intern - Apurva Software Solutions</h3>
+      <p>Worked on content creation, keyword research, SEO techniques, and social media marketing.</p>
+    </div>
+  </section>
 
-<section id="about" class="about reveal">
-  <h2>About Me</h2>
-  <p>
-    I’m Rahul V S, a Computer Science and Business Systems student with
-    a strong interest in building reliable, scalable, and intelligent
-    digital solutions. I enjoy solving real-world problems by combining
-    clean engineering, thoughtful design, and practical business insight.
-  </p>
-</section>
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:rahulvijayan6524@gmail.com">rahulvijayan6524@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/RahulVS-6524" target="_blank">RahulVS-6524</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/rahulvijayan6524" target="_blank">Rahul Vijayan</a></p>
+    <p>LeetCode: <a href="https://leetcode.com/u/Rahul V_S/" target="_blank">Rahul_V_S</a></p>
+  </section>
 
-<footer id="contact" class="contact reveal">
-  <h2>Get In Touch</h2>
-  <p>
-    <a href="mailto:rahulvijayan6524@gmail.com">Email</a> ·
-    <a href="https://linkedin.com/in/rahulvijayan6524">LinkedIn</a> ·
-    <a href="https://github.com/RahulVS-6524">GitHub</a>
-  </p>
-</footer>
-
-<script src="script.js"></script>
+  <footer>
+    <p>© 2026 Rahul V S | Designed with ❤️</p>
+  </footer>
 </body>
 </html>
