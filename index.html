@@ -1,94 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rahul V S - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul V S | Cloud Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
     <nav class="navbar">
-      <h1 class="logo">Rahul V S</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#internships">Internships</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Rahul<span class="dot">.</span>V.S</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#internships" class="nav-link">Experience</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Hello, I'm <span>Rahul</span></h2>
-      <p>Cloud Engineer Aspirant | AI & ML Enthusiast | Web Developer</p>
-      <a href="#contact" class="btn">Hire Me</a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text animate-text">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="name">Rahul V S</h1>
+                <div class="typewriter">
+                    <span class="typed-text"></span>
+                    <span class="cursor-type">&nbsp;</span>
+                </div>
+                <p class="hero-description">Computer Science & Business Systems student with a passion for cloud computing, AI, and scalable system design. CGPA: 8.3 | Class of 2027</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn primary-btn">View Projects <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image animate-image">
+                <div class="image-wrapper">
+                    <div class="floating-card">
+                        <i class="fas fa-cloud cloud-icon"></i>
+                        <i class="fas fa-code code-icon"></i>
+                        <i class="fas fa-robot robot-icon"></i>
+                    </div>
+                    <div class="profile-placeholder">
+                        <span>R</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>Driven Computer Science and Business Systems student seeking a Cloud Engineer role. Skilled in cloud platforms, automation, and system design, with a strong interest in building scalable and secure cloud solutions.</p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">Driven Computer Science and Business Systems student seeking a Cloud Engineer role in a forward-thinking organization. Skilled in cloud platforms, automation, and system design, with a strong interest in building scalable and secure cloud solutions. Eager to apply technical expertise and business insight to real-world challenges while continuously growing in the cloud computing field.</p>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number">8.3</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Events Led</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">LeetCode Problems</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Chennai, India</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-language"></i>
+                        <h3>Languages</h3>
+                        <p>Tamil (Native) · English (Fluent) · Hindi (Conversational)</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Certifications</h3>
+                        <p>NPTEL Java · IBM Cloud · Oracle AI · Infosys GenAI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">Python</div>
-      <div class="skill-card">Java</div>
-      <div class="skill-card">C</div>
-      <div class="skill-card">SQL</div>
-      <div class="skill-card">HTML/CSS/JS</div>
-      <div class="skill-card">GitHub</div>
-    </div>
-  </section>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>B.Tech - Computer Science and Business System</h3>
+                        <h4>Panimalar Engineering College, Chennai</h4>
+                        <p class="timeline-date">2023 - 2027</p>
+                        <p class="timeline-grade">CGPA: 8.3</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Higher Secondary Education</h3>
+                        <h4>Balalok Matriculation Higher Secondary School, Chennai</h4>
+                        <p class="timeline-date">2023</p>
+                        <p class="timeline-grade">85%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>DDoSGuard</h3>
-        <p>Detection and mitigation system for DDoS attacks using traffic analysis.</p>
-      </div>
-      <div class="project-card">
-        <h3>Intelligent Resume Builder API</h3>
-        <p>AI-driven system that generates ATS-optimized resumes tailored to job roles.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical <span>Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+                        <div class="skill-item"><i class="fas fa-code"></i> C</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-html5"></i> HTML</div>
+                        <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS</div>
+                        <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Cloud</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-github"></i> GitHub</div>
+                        <div class="skill-item"><i class="fas fa-cloud"></i> Cloud Computing</div>
+                        <div class="skill-item"><i class="fas fa-robot"></i> Azure</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Internships -->
-  <section id="internships" class="section">
-    <h2>Internships</h2>
-    <div class="internship-card">
-      <h3>AI & ML Virtual Intern - Edunet Foundation | AICTE - Microsoft Azure</h3>
-      <p>Developed CO2 emission prediction model using real-world climate and economic data.</p>
-    </div>
-    <div class="internship-card">
-      <h3>Digital Marketing Intern - Apurva Software Solutions</h3>
-      <p>Worked on content creation, keyword research, SEO techniques, and social media marketing.</p>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shield-halttps://via.placeholder.com/300" onerror="this.onerror=null; this.src='https://via.placeholder.com/300'"></i>
+                    </div>
+                    <h3>DDoSGuard</h3>
+                    <p class="project-subtitle">DDoS Attack Detection & Mitigation System</p>
+                    <ul class="project-features">
+                        <li>Analysed network traffic patterns to identify abnormal behavior</li>
+                        <li>Differentiated between legitimate and malicious requests</li>
+                        <li>Ensured service availability and reliability</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Intelligent Resume Builder API</h3>
+                    <p class="project-subtitle">AI-Powered Resume Generation System</p>
+                    <ul class="project-features">
+                        <li>Built AI system for ATS-optimized resumes</li>
+                        <li>Leveraged real-world developer profiles</li>
+                        <li>Improved keyword alignment with job descriptions</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>CO₂ Emission Predictor</h3>
+                    <p class="project-subtitle">AI & ML Climate Model</p>
+                    <ul class="project-features">
+                        <li>Developed during AICTE - Microsoft Azure internship</li>
+                        <li>Used real-world climate and economic data</li>
+                        <li>Hands-on with data analysis and Azure tools</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:rahulvijayan6524@gmail.com">rahulvijayan6524@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/RahulVS-6524" target="_blank">RahulVS-6524</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/rahulvijayan6524" target="_blank">Rahul Vijayan</a></p>
-    <p>LeetCode: <a href="https://leetcode.com/u/Rahul V_S/" target="_blank">Rahul_V_S</a></p>
-  </section>
+    <!-- Internships Section -->
+    <section id="internships" class="internships">
+        <div class="container">
+            <h2 class="section-title">Internship <span>Experience</span></h2>
+            <div class="internship-cards">
+                <div class="internship-card">
+                    <div class="card-header">
+                        <div class="company-logo">
+                            <i class="fas fa-microsoft"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>AI & ML Virtual Intern</h3>
+                            <h4>Edunet Foundation | AICTE - Microsoft Azure</h4>
+                            <p class="date">June 2025 - July 2025</p>
+                        </div>
+                    </div>
+                    <ul class="internship-details">
+                        <li>Completed 4-week virtual internship in AI, ML, and cloud applications</li>
+                        <li>Developed CO₂ emission prediction model using real-world data</li>
+                        <li>Gained hands-on experience with Azure tools</li>
+                    </ul>
+                </div>
+                <div class="internship-card">
+                    <div class="card-header">
+                        <div class="company-logo">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>Digital Marketing Intern</h3>
+                            <h4>Apurva Software Solutions</h4>
+                            <p class="date">January 2026 - March 2026</p>
+                        </div>
+                    </div>
+                    <ul class="internship-details">
+                        <li>Completed virtual internship in digital marketing strategies</li>
+                        <li>Hands-on experience in content creation and keyword research</li>
+                        <li>Learned SEO techniques and social media marketing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2026 Rahul V S | Designed with ❤️</p>
-  </footer>
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & <span>Positions</span></h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>LeetCode</h3>
+                    <p>Solved 150+ problems with handle <a href="https://leetcode.com/u/Rahul_V_S/" target="_blank">Rahul_V_S</a></p>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>IEEE Student Co-ordinator</h3>
+                    <p>2025 - Present · Organized 20+ impactful technical and non-technical events</p>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-code"></i>
+                    <h3>IEEE 19.0 Hackathon</h3>
+                    <p>Participated in 24-Hour Programming Hackathon, showcasing coding excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/rahulvijayan6524" target="_blank">/in/rahulvijayan6524</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/RahulVS-6524" target="_blank">/RahulVS-6524</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <h3>LeetCode</h3>
+                            <a href="https://leetcode.com/u/Rahul_V_S/" target="_blank">/Rahul_V_S</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Rahul V S. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
