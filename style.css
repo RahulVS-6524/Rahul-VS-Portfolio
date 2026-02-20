@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f3d9c7, #d6e6f2);
+  color: #1a1a1a;
+  line-height: 1.6;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+}
+
+.nav nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+/* Button */
+.btn {
+  padding: 14px 36px;
+  background: #c9a27e;
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(201,162,126,0.4);
+}
+
+/* Sections */
+.projects, .about, .contact {
+  padding: 100px 80px;
+  background: #f8f6f3;
+}
+
+.projects h2, .about h2, .contact h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 40px;
+}
+
+/* Projects */
+.project-card {
+  background: white;
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark Mode */
+body.dark {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #f5f5f5;
+}
+
+body.dark .projects,
+body.dark .about,
+body.dark .contact {
+  background: #121212;
+}
+
+body.dark .project-card {
+  background: #1e1e1e;
+}
+
+body.dark .btn {
+  background: #d4b08a;
+}
+
+/* Toggle */
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 18px;
+  margin-left: 30px;
+  cursor: pointer;
+}
