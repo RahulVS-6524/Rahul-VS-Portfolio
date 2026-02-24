@@ -823,6 +823,18 @@ body {
     gap: 30px;
 }
 
+.resume-btn {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--accent-color);
+}
+
+.resume-btn:hover {
+    background: var(--accent-color);
+    color: var(--dark-bg);
+    border-color: var(--accent-color);
+}
+
 .contact-item {
     display: flex;
     align-items: center;
@@ -1015,4 +1027,5 @@ footer p {
     .hamburger {
         display: flex;
     }
+
 }
